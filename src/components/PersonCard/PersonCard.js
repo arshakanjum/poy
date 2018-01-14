@@ -16,7 +16,7 @@ class PersonCard extends Component {
         </div>
         <div className="PersonCard-data">
           <div className="PersonCard-name">{this.props.person.name}</div>
-          <div className="PersonCard-desc">Piece of shit with no life. Fucked up asshole.</div>
+          <div className="PersonCard-desc">{this.props.person.desc}</div>
         </div>
       </div>
     )

@@ -9,7 +9,10 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: url('https://s3.envato.com/files/223770327/590Blue%20Abstract%20Low%20Poly%20Background.jpg');
+  /*background: url('/BG.png');*/
+  background-image: url("BG.png");
+      
+      background-size:cover;
   /* background: rgb(141, 206, 212); */
   z-index: -10;
 }
