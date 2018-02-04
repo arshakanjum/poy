@@ -1,18 +1,11 @@
-
 import React, { Component } from 'react'
-import './PersonCard.css'
+import './ResultPersonCard.css'
 
-import { Icon } from 'react-fa'
 
-class PersonCard extends Component {
+class ResultPersonCard extends Component {
   render() {
     return (
       <div className={this.props.selected ? 'PersonCard PC-selected' : 'PersonCard'}>
-        <label className="container">
-          <input type="checkbox" checked={this.props.selected} />
-          <span className="checkmark" />
-        </label>
-        {/* <input type="checkbox" checked={this.props.selected} className="PersonCard-checkbox" /> */}
         <div className="PersonCard-image-container">
           <img
             className="PersonCard-image"
@@ -22,11 +15,11 @@ class PersonCard extends Component {
         </div>
         <div className="PersonCard-data">
           <div className="PersonCard-name">{this.props.person.name}</div>
-          <div className="PersonCard-desc">{this.props.person.desc}</div>
+          <div className="PersonCard-desc">Votes: {this.props.person.votes}</div>
         </div>
       </div>
     )
   }
 }
 
-export default PersonCard
+export default ResultPersonCard

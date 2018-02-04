@@ -1,0 +1,53 @@
+.StartPage {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0) 50%, #fff 50%);
+}
+
+.StartPage-Thanks {
+  height: 40px;
+  width: 235px;
+  padding: 0 30px;
+
+  color: Black;
+  font-size: 2rem;
+    font-family: 'Secular One', sans-serif;
+  position: absolute;
+  right: 15%;
+  bottom: 10%;
+}
+.StartPage-facebook-login:hover {
+  background-color: rgba(66, 102, 178, 0.75);
+}
+@media only screen and (max-width: 800px) {
+  .StartPage-Thanks {
+    right: calc(50% - 121px);
+  }
+}
+.StartPage-up-poy {
+  position: absolute;
+  top: 20%;
+  font-size: 3rem;
+  padding: 40px;
+  font-family: 'Secular One', sans-serif;
+  color: white;
+}
+
+@media only screen and (max-width: 800px) {
+  .StartPage-up-poy {
+    font-size: 2rem;
+    padding: 20px;
+  }
+}
+.StartPage-up-logo-container {
+  width: 100vw;
+  text-align: center;
+}
+.StartPage-up-logo {
+  width: 150px;
+}
+@media only screen and (max-width: 800px) {
+  .StartPage-up-logo {
+    width: 70px;
+  }
+}

@@ -1,7 +1,23 @@
+@font-face {
+font-family: 'BebasNeue';
+font-weight: 100;
+font-style: normal;
+src: url('../../fonts/BebasNeue.otf') format('opentype');
+}
+
 .StartPage {
   width: 100vw;
   height: 100vh;
   background-image: linear-gradient(135deg, rgba(0, 0, 0, 0) 50%, #fff 50%);
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.bigger { font-size:200%;  padding: 0px; }
+
+br {
+            display: block; /* makes it have a width */
+            content: ""; /* clears default height */
+            margin-top: 0; /* change this to whatever height you want it */
 }
 
 .StartPage-facebook-login {
@@ -26,15 +42,25 @@
 }
 .StartPage-up-poy {
   position: absolute;
+  text-shadow:
+   -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+     2px 2px 0 #000;
   top: 20%;
   font-size: 3rem;
-  padding: 40px;
-  font-family: 'Secular One', sans-serif;
+  padding: 20px;
+  //font-family: 'Anton';
   color: white;
 }
 
 @media only screen and (max-width: 800px) {
   .StartPage-up-poy {
+    text-shadow:
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
     font-size: 2rem;
     padding: 20px;
   }
@@ -42,6 +68,12 @@
 .StartPage-up-logo-container {
   width: 100vw;
   text-align: center;
+}
+
+.StartPage-down-aff{
+  position: absolute;
+  right: 50%;
+  bottom: 2%;
 }
 .StartPage-up-logo {
   width: 150px;

@@ -1,93 +1,104 @@
-.App {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.App-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  /*background: url('/BG.png');*/
-  background-image: url("BG.png");
-      
-      background-size:cover;
-  /* background: rgb(141, 206, 212); */
-  z-index: -10;
-}
+    @font-face {
+        font-family: 'BebasNeue';
+        font-weight: 100;
+        font-style: normal;
+        src: url('/fonts/BebasNeue.otf') format('opentype');
+    }
 
-.App-content {
-  margin: 10% auto;
-  margin-top: 5%;
-  padding-top: 40px;
-  background: white;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  width: calc(100vw - 20%);
-  max-width: 1000px;
-  /* min-height: 90vh; */
-  font-family: 'Muli', sans-serif;
-  box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.75);
-}
-@media only screen and (max-width: 800px) {
-  .App-content {
-    margin-top: 10%;
-    width: 100vw;
-  }
-}
-.App-header {
-  padding: 5px;
-  font-family: 'Secular One', sans-serif;
-  font-size: 3rem;
-  text-align: center;
+    .App {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .App-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        /*background: url('/BG.png');*/
+        background-image: url("BG.png");
+        background-size: cover;
+        /* background: rgb(141, 206, 212); */
+        z-index: -10;
+    }
 
-  /* background: rgb(141, 206, 212); */
-  color: white;
-  text-transform: uppercase;
-  padding-top: 50px;
-}
+    .App-content {
+        margin: 10% auto;
+        margin-top: 5%;
+        padding-top: 40px;
+        background: white;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        width: calc(100vw - 20%);
+        max-width: 1000px;
+        /* min-height: 90vh; */
+        font-family: 'Muli', sans-serif;
+        box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.75);
+    }
 
-.App-login {
-  background: #f5f5f5;
-  width: 100.4%;
-  padding: 5px 0;
-  margin-left: -0.2%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  margin-top: 5px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-}
-.App-login-text {
-  font-size: 1rem;
-  color: grey;
-  float: left;
-  padding: 0 50px;
-  text-align: center;
-}
+    @media only screen and (max-width: 800px) {
+        .App-content {
+            margin-top: 10%;
+            width: 100vw;
+        }
+    }
 
-.App-people-container {
-  padding: 5px 0;
-}
-.App-people {
-  text-align: center;
-}
-.App-vote {
-  margin-top: 50px;
-  height: 50px;
-  padding: 0 100px;
-  display: inline-block;
-  background-color: rgba(33, 150, 243, 1);
-  color: white;
-  font-size: 1.25rem;
-  width: 100.4%;
-  padding: 5px 0;
-  margin-left: -0.2%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  font-family: 'Muli', sans-serif;
-}
+    .App-header {
+        padding: 5px;
+        font-family: 'Secular One', sans-serif;
+        font-size: 3rem;
+        text-align: center;
+        /* background: rgb(141, 206, 212); */
+        color: white;
+        text-transform: uppercase;
+        padding-top: 50px;
+    }
 
-.App-vote:hover {
-  background-color: rgba(33, 150, 243, 0.75);
-}
+    .App-login {
+        background: #f5f5f5;
+        width: 100.4%;
+        padding: 5px 0;
+        margin-left: -0.2%;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        margin-top: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .App-login-text {
+        font-size: 1rem;
+        color: grey;
+        float: left;
+        padding: 0 50px;
+        text-align: center;
+    }
+
+    .App-people-container {
+        padding: 5px 0;
+    }
+
+    .App-people {
+        text-align: center;
+    }
+
+    .App-vote {
+        margin-top: 50px;
+        height: 50px;
+        padding: 0 100px;
+        display: inline-block;
+        background-color: rgba(33, 150, 243, 1);
+        color: white;
+        font-size: 1.25rem;
+        width: 100.4%;
+        padding: 5px 0;
+        margin-left: -0.2%;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        font-family: 'Muli', sans-serif;
+    }
+
+    .App-vote:hover {
+        background-color: rgba(33, 150, 243, 0.75);
+    }
